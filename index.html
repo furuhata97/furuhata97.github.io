@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Ponto 1</h1>
+	</div>
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" id="field1" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/401458/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&title=Meses&xaxis=Data"></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Filtrar meses</h5>
+						<h6>Filtrar por intervalo de datas</h6><br/>
+						<form>
+						  <div class="form-group">
+						    <label for="b1">Data de início</label>
+						    <input type="date" class="form-control" id="b1" aria-describedby="startDate" min="2018-07-04" style="width: 50%">
+						  </div>
+						  <div class="form-group">
+						    <label for="e1">Data de fim</label>
+						    <input type="date" class="form-control max-today" id="e1" style="width: 50%">
+						  </div>
+						  <input type="button" class="btn btn-primary" id="changeDate1" value="Aplicar filtro por data">
+						</form>
+						<br><br>
+						<h6>Filtrar os últimos <input id="range1" type="number" min="1" max="8000" step="1" value="1"> resultados</h6><br/>
+						  <input type="button" class="btn btn-primary" id="changeRange1" value="Aplicar filtro por quantidade">
+						  <br><br>
+						  <input type="button" class="btn btn-danger" id="return1" value="Voltar ao resultado padrão">
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" id="field2" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/401458/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&title=Dia&xaxis=Data"></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Filtrar dias</h5>
+						<h6>Filtrar por intervalo de datas</h6><br/>
+						<form>
+						  <div class="form-group">
+						    <label for="b2">Data de início</label>
+						    <input type="date" class="form-control" id="b2" aria-describedby="startDate" min="2018-07-04" style="width: 50%">
+						  </div>
+						  <div class="form-group">
+						    <label for="e2">Data de fim</label>
+						    <input type="date" class="form-control max-today" id="e2" style="width: 50%">
+						  </div>
+						  <input type="button" class="btn btn-primary" id="changeDate2" value="Aplicar filtro por data">
+						</form>
+						<br><br>
+						<h6>Filtrar os últimos <input id="range2" type="number" min="1" max="8000" step="1" value="1"> resultados</h6><br/>
+						  <input type="button" class="btn btn-primary" id="changeRange2" value="Aplicar filtro por quantidade">
+						  <br><br>
+						  <input type="button" class="btn btn-danger" id="return2" value="Voltar ao resultado padrão">
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+		</div>
+<br>
+		<div class="row justify-content-md-center">
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" id="field3" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/401458/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&title=Horas&xaxis=Data"></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Filtrar horas</h5>
+						<h6>Filtrar por intervalo de datas</h6><br/>
+						<form>
+						  <div class="form-group">
+						    <label for="b3">Data de início</label>
+						    <input type="date" class="form-control" id="b3" aria-describedby="startDate" min="2018-07-04" style="width: 50%">
+						  </div>
+						  <div class="form-group">
+						    <label for="e3">Data de fim</label>
+						    <input type="date" class="form-control max-today" id="e3" style="width: 50%">
+						  </div>
+						  <input type="button" class="btn btn-primary" id="changeDate3" value="Aplicar filtro por data">
+						</form>
+						<br><br>
+						<h6>Filtrar os últimos <input id="range3" type="number" min="1" max="8000" step="1" value="1"> resultados</h6><br/>
+						  <input type="button" class="btn btn-primary" id="changeRange3" value="Aplicar filtro por quantidade">
+						  <br><br>
+						  <input type="button" class="btn btn-danger" id="return3" value="Voltar ao resultado padrão">
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" id="field4" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/401458/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&title=Horas&xaxis=Data"></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Filtrar horas</h5>
+						<h6>Filtrar por intervalo de datas</h6><br/>
+						<form>
+						  <div class="form-group">
+						    <label for="b4">Data de início</label>
+						    <input type="date" class="form-control" id="b4" aria-describedby="startDate" min="2018-07-04" style="width: 50%">
+						  </div>
+						  <div class="form-group">
+						    <label for="e4">Data de fim</label>
+						    <input type="date" class="form-control max-today" id="e4" style="width: 50%">
+						  </div>
+						  <input type="button" class="btn btn-primary" id="changeDate4" value="Aplicar filtro por data">
+						</form>
+						<br><br>
+						<h6>Filtrar os últimos <input id="range4" type="number" min="1" max="8000" step="1" value="1"> resultados</h6><br/>
+						  <input type="button" class="btn btn-primary" id="changeRange4" value="Aplicar filtro por quantidade">
+						  <br><br>
+						  <input type="button" class="btn btn-danger" id="return4" value="Voltar ao resultado padrão">
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+		</div>
+<br>
+		<div class="row justify-content-md-center">
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" id="field5" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/401458/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&title=Temperatura&xaxis=Data"></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Filtrar temperatura</h5>
+						<h6>Filtrar por intervalo de datas</h6><br/>
+						<form>
+						  <div class="form-group">
+						    <label for="b5">Data de início</label>
+						    <input type="date" class="form-control" id="b5" aria-describedby="startDate" min="2018-07-04" style="width: 50%">
+						  </div>
+						  <div class="form-group">
+						    <label for="e5">Data de fim</label>
+						    <input type="date" class="form-control max-today" id="e5" style="width: 50%">
+						  </div>
+						  <input type="button" class="btn btn-primary" id="changeDate5" value="Aplicar filtro por data">
+						</form>
+						<br><br>
+						<h6>Filtrar os últimos <input id="range5" type="number" min="1" max="8000" step="1" value="1"> resultados</h6><br/>
+						  <input type="button" class="btn btn-primary" id="changeRange5" value="Aplicar filtro por quantidade">
+						  <br><br>
+						  <input type="button" class="btn btn-danger" id="return5" value="Voltar ao resultado padrão">
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" id="field6" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/401458/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&title=Oxigênio&xaxis=Data"></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Filtrar oxigênio</h5>
+						<h6>Filtrar por intervalo de datas</h6><br/>
+						<form>
+						  <div class="form-group">
+						    <label for="b6">Data de início</label>
+						    <input type="date" class="form-control" id="b6" aria-describedby="startDate" min="2018-07-04" style="width: 50%">
+						  </div>
+						  <div class="form-group">
+						    <label for="e6">Data de fim</label>
+						    <input type="date" class="form-control max-today" id="e6" style="width: 50%">
+						  </div>
+						  <input type="button" class="btn btn-primary" id="changeDate6" value="Aplicar filtro por data">
+						</form>
+						<br><br>
+						<h6>Filtrar os últimos <input id="range6" type="number" min="1" max="8000" step="1" value="1"> resultados</h6><br/>
+						  <input type="button" class="btn btn-primary" id="changeRange6" value="Aplicar filtro por quantidade">
+						  <br><br>
+						  <input type="button" class="btn btn-danger" id="return6" value="Voltar ao resultado padrão">
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+		</div>
+<br>
+		<div class="row justify-content-md-center">
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" id="field7" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/401458/charts/7?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&title=Bateria&xaxis=Data"></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Filtrar temperatura</h5>
+						<h6>Filtrar por intervalo de datas</h6><br/>
+						<form>
+						  <div class="form-group">
+						    <label for="b7">Data de início</label>
+						    <input type="date" class="form-control" id="b7" aria-describedby="startDate" min="2018-07-04" style="width: 50%">
+						  </div>
+						  <div class="form-group">
+						    <label for="e7">Data de fim</label>
+						    <input type="date" class="form-control max-today" id="e7" style="width: 50%">
+						  </div>
+						  <input type="button" class="btn btn-primary" id="changeDate7" value="Aplicar filtro por data">
+						</form>
+						<br><br>
+						<h6>Filtrar os últimos <input id="range7" type="number" min="1" max="8000" step="1" value="1"> resultados</h6><br/>
+						  <input type="button" class="btn btn-primary" id="changeRange7" value="Aplicar filtro por quantidade">
+						  <br><br>
+						  <input type="button" class="btn btn-danger" id="return7" value="Voltar ao resultado padrão">
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" id="field8" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/401458/charts/8?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15&title=Sink_Bat&xaxis=Data"></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Filtrar oxigênio</h5>
+						<h6>Filtrar por intervalo de datas</h6><br/>
+						<form>
+						  <div class="form-group">
+						    <label for="b8">Data de início</label>
+						    <input type="date" class="form-control" id="b8" aria-describedby="startDate" min="2018-07-04" style="width: 50%">
+						  </div>
+						  <div class="form-group">
+						    <label for="e8">Data de fim</label>
+						    <input type="date" class="form-control max-today" id="e8" style="width: 50%">
+						  </div>
+						  <input type="button" class="btn btn-primary" id="changeDate8" value="Aplicar filtro por data">
+						</form>
+						<br><br>
+						<h6>Filtrar os últimos <input id="range8" type="number" min="1" max="8000" step="1" value="1"> resultados</h6><br/>
+						  <input type="button" class="btn btn-primary" id="changeRange8" value="Aplicar filtro por quantidade">
+						  <br><br>
+						  <input type="button" class="btn btn-danger" id="return8" value="Voltar ao resultado padrão">
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+		</div>
+<br>
+		<div class="row justify-content-md-center">
+			<div class="col-md-6">
+				<div class="card">
+					<iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.651444201861!2d-51.84636168455899!3d-23.328401984799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE5JzQyLjMiUyA1McKwNTAnMzkuMCJX!5e0!3m2!1spt-BR!2sbr!4v1538230054339" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br/>
+					<div class="card-body">
+						<h5 class="card-title">Localização</h5>
+					</div>
+					<br/>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
