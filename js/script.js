@@ -154,3 +154,36 @@ $(function(){
         return new Date().toJSON().split('T')[0];
     });
 });
+
+
+$(document).ready(function () {
+        console.log($(window).width());
+        var $gr = $(".graphic");
+        var $br = $(".breaker");
+        if ($(window).width() < 991) {
+            $gr.removeClass('col-md-6').addClass('col-md-8');
+            $br.addClass('w-100');
+        }
+        else{
+            $gr.removeClass('col-md-8').addClass('col-md-6');
+            $br.removeClass('w-100');
+        }
+});
+
+
+
+$(window).resize(function () {
+        console.log($(window).width());
+        var $gr = $(".graphic");
+        var $br = $(".breaker");
+        if ($(window).width() < 991) {
+            console.log($(window).width());
+            $gr.removeClass('col-md-6').addClass('col-md-8');
+            $br.addClass('w-100');
+        }
+        else{
+            $gr.removeClass('col-md-8').addClass('col-md-6');
+            $br.removeClass('w-100');
+        }
+});
+
