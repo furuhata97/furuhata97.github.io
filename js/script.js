@@ -150,7 +150,7 @@ $(function () {
 
 
 $(function(){
-    $('#d2.max-today').prop('max', function(){
+    $(".max-today").prop('max', function(){
         return new Date().toJSON().split('T')[0];
     });
 });
